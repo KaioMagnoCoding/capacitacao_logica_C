@@ -13,7 +13,9 @@
 int main(){
 
     // crie seu código aqui:
-
+    float A = 1.23;
+    float B = 4.33;
+    float C = A * B;
 
 
     // validação

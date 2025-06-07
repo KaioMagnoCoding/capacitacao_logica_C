@@ -16,13 +16,23 @@
 
 int main() {
     // implementação:
+    int num = 0;
 
+    printf("Digite um numero inteiro entre 1 e 10: ");
+    do{
+        scanf("%d", &num);
 
+        if(num < 1 || num > 10)
+            printf("O numero digitado não esta entre 1 e 10.\nDigite novamente: ");
 
+    }while(num < 1 || num > 10);
 
-
-
-
+    int tabuada;
+    printf("\n");
+    for(int i = 0; i <= 10; i++){
+        tabuada = num * i;
+        printf("%d\n", tabuada);
+    }
 
     return 0;
 }

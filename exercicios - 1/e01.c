@@ -11,7 +11,9 @@
 */
 int main() {
     // Declare as variáveis abaixo:
-    
+    int cleitinho = 1;
+    float floutinho = 3.3333;
+    char charada = 'c';
 
 
 

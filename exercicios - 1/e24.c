@@ -30,8 +30,9 @@ int main() {
     } while (N <= K);
     
     // Calcula a combinação (Comb)
-
+    Comb = fatorial(N) / (fatorial(K)  * fatorial(N - K));
     
+    printf("C(%d, %d) = %d\n", N, K, Comb);
 
     return 0;
 }

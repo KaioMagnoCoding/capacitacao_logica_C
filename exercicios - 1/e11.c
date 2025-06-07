@@ -13,3 +13,40 @@
     Tente digitar o código manualmente, sem copiar e colar. Em caso de dúvida, consulte os exemplos 07 e 17.
 */
 
+#include <stdio.h>
+#include <ctype.h>
+
+int main(){
+
+    char carac;
+    printf("Digite um caractere maiusculo qualquer:");
+    
+    do{
+        scanf(" %c", &carac);
+
+        if(isupper(carac) == 0){
+            printf("O caractere digitado é minuscculo.Tente novamente: ");
+        }
+    } while(isupper(carac) != 1);
+
+    switch (carac)
+    {
+    case 'A':
+        printf("Você escolheu Albert Einstein\n");
+        break;
+    
+    case 'M':
+        printf("Você escolheu Marie Curie\n");
+        break;
+
+    case 'N':
+        printf("Você escolheu Nikola Tesla\n");
+        break;
+
+    default:
+        printf("Opção inválida!\n");
+        break;
+    }
+
+    return 0;
+}

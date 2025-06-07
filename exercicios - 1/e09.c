@@ -14,7 +14,10 @@ int main(){
     scanf("%d", &numero);
 
     //IF/ELSE:
-
+    if(numero > 0)
+        printf("Numero positivo.");
+    else
+        printf("Numero negativo");
 
     return 0;
 }

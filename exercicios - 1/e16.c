@@ -17,6 +17,13 @@ int main() {
     
 
     for (int i = 0; i < 5; i++) {
+        if(i == 0){
+            mao[0] = 0;
+        } 
+        else if(i == 4){
+            mao[i] = 0;
+        }
+
         if (mao[i] == 1){
             printf("Dedo %d: aberto\n", i + 1);
         } else {
